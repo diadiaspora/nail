@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plume &amp; Polish | Nail and Lash Boutique</title>
+  <meta name="description" content="Plume & Polish is a nail and lash boutique offering manicures, gel and acrylic sets, pedicures, lash extensions, lifts and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <a href="#services">New: Soft gel extensions are here</a>
+    <span aria-hidden="true">/</span>
+    <a href="#book" data-open-booking>Now booking holiday sets</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="Plume and Polish home">
+        <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#F26DF9"/>
+              <stop offset="1" stop-color="#EB4B98"/>
+            </linearGradient>
+          </defs>
+          <rect x="11" y="4" width="18" height="32" rx="9" fill="url(#lg)"/>
+          <path d="M4 30c6-8 12-10 16-10s10 2 16 10" fill="none" stroke="#5158BB" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span>Plume<em>&amp;</em>Polish</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#approach">Our Approach</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#addons">Add-ons</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="header-cta">
+        <button class="btn btn-pink btn-sm" type="button" data-open-booking>Book Now</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Nail &amp; lash boutique</p>
+          <h1>Nails and lashes? It's OK to want both.</h1>
+          <p class="lead">Walk in with bare nails and tired eyes. Walk out feeling like the best-dressed version of yourself. One chair, one appointment, one beautiful hour.</p>
+
+          <p class="pick-label">Pick your path:</p>
+          <div class="path-picker" role="group" aria-label="Pick your path">
+            <button type="button" class="path is-active" data-path="nails" aria-pressed="true">Nails</button>
+            <button type="button" class="path" data-path="lashes" aria-pressed="false">Lashes</button>
+            <button type="button" class="path" data-path="both" aria-pressed="false">Both</button>
+          </div>
+          <p class="path-note" id="pathNote" aria-live="polite">Manicures, pedicures, gel, acrylic and nail art, finished by hand.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-indigo" href="#services" id="pathGo">See nail services</a>
+            <button class="btn btn-ghost" type="button" data-open-booking>Book a visit</button>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 480 520" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#F26DF9"/><stop offset="1" stop-color="#EB4B98"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#5158BB"/><stop offset="1" stop-color="#F26DF9"/>
+              </linearGradient>
+            </defs>
+            <circle cx="250" cy="270" r="210" fill="#5158BB"/>
+            <circle cx="250" cy="270" r="210" fill="url(#g2)" opacity=".35"/>
+            <g class="nail n1"><rect x="92" y="190" width="70" height="170" rx="35" fill="url(#g1)"/><rect x="104" y="204" width="14" height="70" rx="7" fill="#fff" opacity=".45"/></g>
+            <g class="nail n2"><rect x="178" y="140" width="76" height="200" rx="38" fill="#fff"/><rect x="190" y="154" width="14" height="80" rx="7" fill="#F26DF9" opacity=".5"/></g>
+            <g class="nail n3"><rect x="270" y="165" width="72" height="185" rx="36" fill="#EB4B98"/><rect x="282" y="179" width="14" height="72" rx="7" fill="#fff" opacity=".45"/></g>
+            <g class="nail n4"><rect x="356" y="215" width="62" height="150" rx="31" fill="url(#g1)"/><rect x="367" y="228" width="12" height="58" rx="6" fill="#fff" opacity=".45"/></g>
+            <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round">
+              <path d="M70 70c40-34 100-44 150-26"/>
+              <path d="M84 54l-10-24M112 40l-6-26M142 32l-2-26M174 30l4-26M206 34l10-24"/>
+            </g>
+            <circle cx="390" cy="96" r="12" fill="#F26DF9"/>
+            <circle cx="420" cy="140" r="6" fill="#fff"/>
+            <circle cx="60" cy="430" r="14" fill="#EB4B98"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee marquee-pink" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Now booking all appointments</span><i></i>
+        <span>Nails</span><i></i>
+        <span>Lashes</span><i></i>
+        <span>Walk-ins welcome on weekdays</span><i></i>
+        <span>Now booking all appointments</span><i></i>
+        <span>Nails</span><i></i>
+        <span>Lashes</span><i></i>
+        <span>Walk-ins welcome on weekdays</span><i></i>
+      </div>
+    </div>
+
+    <!-- Pain points -->
+    <section class="section pains">
+      <div class="wrap">
+        <p class="eyebrow">Sound familiar?</p>
+        <h2 class="pain">Chipped by Thursday?</h2>
+        <h2 class="pain">Waking up with no lashes in sight?</h2>
+        <h2 class="pain">Too busy to book two appointments?</h2>
+        <h2 class="pain">Unsure what you even want?</h2>
+        <p class="pains-sub">We've got you. Every visit starts with a short chat about your lifestyle, your nail shape and your eye shape, so the set you leave with actually works for you.</p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="wrap stats-grid">
+        <div class="stat">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 12v13l8 5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <strong>12+</strong>
+          <span>years of combined technician experience</span>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40S6 29 6 17a9 9 0 0 1 18-3 9 9 0 0 1 18 3c0 12-18 23-18 23z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+          <strong>4,000+</strong>
+          <span>happy sets completed</span>
+        </div>
+        <div class="stat">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l5 12 13 1-10 9 3 13-11-7-11 7 3-13-10-9 13-1z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+          <strong>2</strong>
+          <span>specialties, one calm studio</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="section" id="approach">
+      <div class="wrap">
+        <p class="eyebrow">Our approach</p>
+        <h2 class="section-title">What makes a Plume &amp; Polish visit different?</h2>
+        <div class="trio">
+          <article class="trio-card">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8c10 10 14 20 14 28a14 14 0 0 1-28 0c0-8 4-18 14-28z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M26 38a6 6 0 0 0 6 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            <h3>Healthy first</h3>
+            <p>Hospital-grade sterilized tools, gentle prep and no over-filing. Your natural nails and lashes stay strong between visits.</p>
+          </article>
+          <article class="trio-card">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="14" width="40" height="36" rx="8" fill="none" stroke="currentColor" stroke-width="3"/><path d="M12 26h40M24 8v10M40 8v10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            <h3>Made for your week</h3>
+            <p>Pick a finish that fits your routine, from desk-friendly neutrals to full-glam length. Combine nails and lashes in a single booking.</p>
+          </article>
+          <article class="trio-card">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 38c8-14 14-20 22-20s14 6 22 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="40" r="6" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+            <h3>Detail you can see</h3>
+            <p>Every set is mapped to your nail bed or eye shape, then finished by hand. No two sets look the same, and that's the point.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="wrap">
+        <p class="eyebrow">Services</p>
+        <h2 class="section-title">The favorites, all in one place.</h2>
+        <p class="section-sub">Prices are starting points and vary by length, design and your current set. Sample pricing shown.</p>
+
+        <div class="filters" role="tablist" aria-label="Filter services">
+          <button type="button" class="chip is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button type="button" class="chip" role="tab" aria-selected="false" data-filter="nails">Nails</button>
+          <button type="button" class="chip" role="tab" aria-selected="false" data-filter="lashes">Lashes</button>
+        </div>
+
+        <div class="card-grid" id="serviceGrid">
+
+          <!-- NAILS -->
+          <article class="card" data-cat="nails" data-service="Classic Manicure">
+            <div class="card-top card-top-a">
+              <span class="tag">Nails</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="22" y="8" width="20" height="40" rx="10" fill="#fff"/><rect x="26" y="14" width="4" height="16" rx="2" fill="#F26DF9" opacity=".6"/><path d="M12 56h40" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Classic Manicure</h3>
+              <p class="card-meta"><span>45 min</span><span>from $35</span></p>
+              <p>Shape, cuticle care, hand massage and your choice of regular polish.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Classic Manicure">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: natural nails and quick refreshes. Lasts about 5 to 7 days. Add gel for two weeks of wear.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nails" data-service="Gel Manicure">
+            <div class="card-top card-top-b">
+              <span class="tag">Nails</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="22" y="8" width="20" height="40" rx="10" fill="#fff"/><rect x="26" y="14" width="4" height="16" rx="2" fill="#EB4B98" opacity=".6"/><path d="M14 56h36" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M50 10l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#fff"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Gel Manicure</h3>
+              <p class="card-meta"><span>60 min</span><span>from $50</span></p>
+              <p>Chip-free, high-shine color cured under LED. Dry and ready the moment you leave.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Gel Manicure">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: busy weeks and vacations. Lasts 2 to 3 weeks. Soak-off removal is included.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nails" data-service="Acrylic Full Set">
+            <div class="card-top card-top-c">
+              <span class="tag">Nails</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 50V22a12 12 0 0 1 24 0v28z" fill="#fff"/><rect x="26" y="16" width="4" height="18" rx="2" fill="#5158BB" opacity=".5"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Acrylic Full Set</h3>
+              <p class="card-meta"><span>90 min</span><span>from $70</span></p>
+              <p>Sculpted length and strength in your choice of shape, from soft square to almond.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Acrylic Full Set">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: added length and durability. Plan a fill every 2 to 3 weeks to keep the shape.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nails" data-service="Gel-X Soft Gel Extensions">
+            <div class="card-top card-top-a">
+              <span class="tag">Nails</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="14" width="16" height="36" rx="8" fill="#fff"/><rect x="34" y="10" width="16" height="40" rx="8" fill="#fff" opacity=".8"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Soft Gel Extensions</h3>
+              <p class="card-meta"><span>90 min</span><span>from $75</span></p>
+              <p>Lightweight pre-shaped tips, bonded and cured for a natural, flexible feel.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Soft Gel Extensions">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: fast length without heavy product. Lasts 3 to 4 weeks and soaks off cleanly.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nails" data-service="Dip Powder Manicure">
+            <div class="card-top card-top-b">
+              <span class="tag">Nails</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M18 22h28l-4 30H22z" fill="#fff"/><rect x="22" y="12" width="20" height="10" rx="3" fill="#fff" opacity=".8"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Dip Powder</h3>
+              <p class="card-meta"><span>60 min</span><span>from $55</span></p>
+              <p>Color-rich powder layers with no lamp needed. Strong, smooth and lightweight.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Dip Powder">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: thin or flexible natural nails that need extra strength. Lasts about 3 weeks.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nails" data-service="Spa Pedicure">
+            <div class="card-top card-top-c">
+              <span class="tag">Nails</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12 40c6-4 10-4 14 0s10 4 14 0 8-4 12 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M12 28c6-4 10-4 14 0s10 4 14 0 8-4 12 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".7"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Spa Pedicure</h3>
+              <p class="card-meta"><span>60 min</span><span>from $55</span></p>
+              <p>Warm soak, exfoliation, callus care, massage and polish or gel color.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Spa Pedicure">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: a full reset. Add gel polish for 3 to 4 weeks of wear.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="nails" data-service="Custom Nail Art">
+            <div class="card-top card-top-a">
+              <span class="tag">Nails</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8l5 14 14 2-11 9 3 15-11-8-11 8 3-15-11-9 14-2z" fill="#fff"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Custom Nail Art</h3>
+              <p class="card-meta"><span>+15 to 45 min</span><span>from $5 per nail</span></p>
+              <p>French tips, chrome, hand-painted details, charms and gems added to any set.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Custom Nail Art">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Bring a screenshot and we'll quote it before we start. Intricate designs may take longer.</div>
+            </div>
+          </article>
+
+          <!-- LASHES -->
+          <article class="card" data-cat="lashes" data-service="Classic Lash Extensions">
+            <div class="card-top card-top-b">
+              <span class="tag">Lashes</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 40c10-12 38-12 48 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M14 34l-4-10M24 30l-2-12M34 29v-13M44 30l2-12M54 34l4-10" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Classic Lash Set</h3>
+              <p class="card-meta"><span>2 hr</span><span>from $120</span></p>
+              <p>One extension per natural lash for a defined, mascara-like look.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Classic Lash Set">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: a natural, polished everyday look. Fill every 2 to 3 weeks.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="lashes" data-service="Hybrid Lash Extensions">
+            <div class="card-top card-top-c">
+              <span class="tag">Lashes</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 40c10-12 38-12 48 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M14 34l-4-10M20 32l-2-12M28 30l-1-14M36 30l1-14M44 32l2-12M54 34l4-10" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Hybrid Lash Set</h3>
+              <p class="card-meta"><span>2 hr</span><span>from $145</span></p>
+              <p>A mix of classic and fan lashes for texture, fullness and a soft wispy finish.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Hybrid Lash Set">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: the in-between look. Our most requested set.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="lashes" data-service="Volume Lash Extensions">
+            <div class="card-top card-top-a">
+              <span class="tag">Lashes</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 42c10-14 38-14 48 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M12 36l-5-10M16 34l-2-13M22 32l-2-15M28 31l-1-16M36 31l1-16M42 32l2-15M48 34l2-13M52 36l5-10" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Volume Lash Set</h3>
+              <p class="card-meta"><span>2.5 hr</span><span>from $170</span></p>
+              <p>Handmade fans of ultra-fine lashes for dramatic, fluffy density.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Volume Lash Set">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: full glam. Lightweight so your natural lashes stay comfortable.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="lashes" data-service="Lash Lift and Tint">
+            <div class="card-top card-top-b">
+              <span class="tag">Lashes</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 44c8-6 14-8 22-8s14 2 22 8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M14 36c2-8 2-14 0-20M26 32c1-8 1-14 0-20M38 32c-1-8-1-14 0-20M50 36c-2-8-2-14 0-20" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Lash Lift &amp; Tint</h3>
+              <p class="card-meta"><span>60 min</span><span>from $85</span></p>
+              <p>Curls and darkens your own lashes. No extensions, no daily curling.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Lash Lift and Tint">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Best for: a low-maintenance look. Lasts 6 to 8 weeks.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="lashes" data-service="Lash Fill">
+            <div class="card-top card-top-c">
+              <span class="tag">Lashes</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="18" fill="none" stroke="#fff" stroke-width="4"/><path d="M32 22v20M22 32h20" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Lash Fill</h3>
+              <p class="card-meta"><span>60 to 90 min</span><span>from $65</span></p>
+              <p>Replace lashes that have shed so your set stays full and even.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Lash Fill">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>Book within 3 weeks of your last visit. After that, a new set may be needed.</div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="lashes" data-service="Brow Lamination">
+            <div class="card-top card-top-a">
+              <span class="tag">Lashes</span>
+              <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 34c10-12 30-16 48-8" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/></svg>
+            </div>
+            <div class="card-body">
+              <h3>Brow Lamination</h3>
+              <p class="card-meta"><span>45 min</span><span>from $70</span></p>
+              <p>Brushed-up, fluffy brows set in place, with shaping and a light tint.</p>
+              <div class="card-actions">
+                <button class="btn btn-pink btn-sm" type="button" data-book="Brow Lamination">Get started</button>
+                <button class="link" type="button" aria-expanded="false">Or learn more</button>
+              </div>
+              <div class="more" hidden>A great companion to any lash service. Lasts 4 to 6 weeks.</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee 2 -->
+    <div class="marquee marquee-indigo" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Who we are</span><i></i><span>Who we are</span><i></i><span>Who we are</span><i></i><span>Who we are</span><i></i>
+        <span>Who we are</span><i></i><span>Who we are</span><i></i><span>Who we are</span><i></i><span>Who we are</span><i></i>
+      </div>
+    </div>
+
+    <!-- Is / isn't -->
+    <section class="section about">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">About the studio</p>
+          <h2 class="section-title">A small studio with a big love for the details.</h2>
+          <p>Plume &amp; Polish began with one table, one lamp and a belief that getting your nails and lashes done should feel like an exhale. Today we're a calm, bright boutique where every technician is licensed, trained in nail and lash health, and genuinely happy to see you.</p>
+          <p>Come in for a quick refresh, a full transformation, or a treat before a big day.</p>
+        </div>
+        <div class="isnt">
+          <div class="isnt-col is">
+            <h3>What it is</h3>
+            <ul>
+              <li>Clean, sterilized tools every visit</li>
+              <li>A real consultation before we start</li>
+              <li>Gentle on your natural nails and lashes</li>
+              <li>Nails and lashes in one booking</li>
+            </ul>
+          </div>
+          <div class="isnt-col not">
+            <h3>What it is not</h3>
+            <ul>
+              <li>A rushed assembly line</li>
+              <li>One look for everyone</li>
+              <li>Heavy sets that damage</li>
+              <li>Surprise charges at checkout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section reviews" id="reviews">
+      <div class="wrap">
+        <p class="eyebrow">Reviews</p>
+        <h2 class="section-title">Kind words from our regulars.</h2>
+
+        <div class="slider" id="slider">
+          <figure class="slide is-active">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>My gel manicure was still perfect at week three, and the lash fill took less time than my coffee break. I'm booking both every time now.</blockquote>
+            <figcaption>Camila R.</figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>They actually asked about my job and my hands before choosing a shape. Finally a set that survives the keyboard and still looks fancy.</blockquote>
+            <figcaption>Andrea L.</figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>The hybrid lashes look like my own, only better. Light, comfortable and I get compliments every single week.</blockquote>
+            <figcaption>Valeria M.</figcaption>
+          </figure>
+          <figure class="slide">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>Spa pedicure, soft gel tips and a lash lift for my sister's wedding. Everything matched, nothing hurt, and the studio smells amazing.</blockquote>
+            <figcaption>Daniela P.</figcaption>
+          </figure>
+
+          <div class="slider-controls">
+            <button type="button" class="round" id="prev" aria-label="Previous review">&larr;</button>
+            <div class="dots" id="dots" role="tablist" aria-label="Choose review"></div>
+            <button type="button" class="round" id="next" aria-label="Next review">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add-ons -->
+    <section class="section addons" id="addons">
+      <div class="wrap">
+        <p class="eyebrow">Beyond the basics</p>
+        <h2 class="section-title">Little extras that make it yours.</h2>
+        <div class="tiles">
+          <div class="tile"><span class="dot"></span><strong>French tips</strong><small>+ $10</small></div>
+          <div class="tile"><span class="dot"></span><strong>Chrome finish</strong><small>+ $12</small></div>
+          <div class="tile"><span class="dot"></span><strong>Nail charms</strong><small>from $3 each</small></div>
+          <div class="tile"><span class="dot"></span><strong>Paraffin treatment</strong><small>+ $15</small></div>
+          <div class="tile"><span class="dot"></span><strong>Gel or acrylic removal</strong><small>from $15</small></div>
+          <div class="tile"><span class="dot"></span><strong>Lash removal</strong><small>from $25</small></div>
+          <div class="tile"><span class="dot"></span><strong>Colored lashes</strong><small>+ $15</small></div>
+          <div class="tile"><span class="dot"></span><strong>Lash bath &amp; aftercare kit</strong><small>+ $12</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section news">
+      <div class="wrap news-inner">
+        <div>
+          <p class="eyebrow eyebrow-light">Stay in touch</p>
+          <h2 class="section-title light">Get first dibs on new sets and openings.</h2>
+        </div>
+        <form class="news-form" id="newsForm" novalidate>
+          <label class="sr-only" for="newsEmail">Email address</label>
+          <input id="newsEmail" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+          <button class="btn btn-pink" type="submit">Join the list</button>
+          <p class="form-msg" id="newsMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Visit / Booking CTA -->
+    <section class="section visit" id="visit">
+      <div class="wrap visit-inner">
+        <p class="eyebrow">Visit</p>
+        <h2 class="big">Book your first visit.</h2>
+        <button class="btn btn-indigo btn-lg" type="button" data-open-booking id="book">Book an appointment</button>
+        <div class="visit-info">
+          <div>
+            <h3>Studio hours</h3>
+            <p>Mon to Fri: 10am to 7pm<br>Sat: 9am to 6pm<br>Sun: Closed</p>
+          </div>
+          <div>
+            <h3>Find us</h3>
+            <p>123 Orchid Lane<br>Your City, ST 00000</p>
+          </div>
+          <div>
+            <h3>Say hello</h3>
+            <p>(555) 010-0123<br>hello@plumeandpolish.example</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">Plume<em>&amp;</em>Polish</span>
+        <p>Nails and lashes, done beautifully.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Manicures</a>
+        <a href="#services">Extensions</a>
+        <a href="#services">Pedicures</a>
+        <a href="#services">Lash sets</a>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <a href="#approach">Our approach</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#addons">Add-ons</a>
+      </div>
+      <div>
+        <h4>Book</h4>
+        <a href="#book" data-open-booking>Appointments</a>
+        <a href="#visit">Hours &amp; location</a>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span id="year">2026</span> Plume &amp; Polish. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Booking dialog -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
+      <div id="bookFormWrap">
+        <h2 id="modalTitle">Book an appointment</h2>
+        <p class="modal-sub">Tell us what you'd like and we'll confirm your time shortly.</p>
+        <form id="bookForm" novalidate>
+          <div class="field">
+            <label for="bkService">Service</label>
+            <select id="bkService" name="service" required></select>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="bkDate">Preferred date</label>
+              <input id="bkDate" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="bkTime">Preferred time</label>
+              <select id="bkTime" name="time" required>
+                <option value="">Select a time</option>
+                <option>10:00 am</option><option>11:00 am</option><option>12:00 pm</option>
+                <option>1:00 pm</option><option>2:00 pm</option><option>3:00 pm</option>
+                <option>4:00 pm</option><option>5:00 pm</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="bkName">Your name</label>
+            <input id="bkName" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="bkContact">Email or phone</label>
+            <input id="bkContact" name="contact" type="text" autocomplete="email" required>
+          </div>
+          <p class="form-msg" id="bookMsg" role="alert"></p>
+          <button class="btn btn-pink btn-block" type="submit">Request appointment</button>
+        </form>
+      </div>
+      <div id="bookDone" hidden>
+        <h2>Thank you!</h2>
+        <p class="modal-sub" id="bookDoneText"></p>
+        <button class="btn btn-indigo" type="button" data-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
